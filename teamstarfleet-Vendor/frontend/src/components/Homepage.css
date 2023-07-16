@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+h1{
+    font-family: 'Lato','sans-seerif';
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+.header{
+    position: relative;
+    background: linear-gradient(180deg, rgb(56, 48, 92)20%, rgb(84, 123, 167)100%);
+    color: rgb(223, 212, 167);
+
+}
+.team-name{
+    height: 30vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Buttons{
+    position: relative;
+    height: 35vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.waves{
+    position: relative;
+    width:100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height:150px;
+}
+.background_wave>use{
+    animation: move-forever 10s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.background_wave>use:nth-child(1){
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.background_wave>use:nth-child(2){
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.background_wave>use:nth-child(3){
+    animation-delay: -4s;
+    animation-duration: 19s;
+}
+
+
+@keyframes move-forever {
+    0%{
+        transform: translate3d(-90px, 0, 0);
+    }
+    100%{
+        transform: translate3d(85px, 0, 0);
+    }
+
+    
+}

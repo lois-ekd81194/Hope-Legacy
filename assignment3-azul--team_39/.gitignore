@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+output/
+
+
+config/token.txt
+# PyCharm IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+

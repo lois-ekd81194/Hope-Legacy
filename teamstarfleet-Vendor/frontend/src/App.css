@@ -1,0 +1,106 @@
+:root{
+  --color-vendor-main: #d2dae1;
+
+}
+.App {
+  text-align: center;
+}
+
+#menu img {     
+  width:  100px;
+  height: 100px;
+}
+
+#itemPicture{
+  width:  100px;
+  height: 100px;
+}
+
+.vendorBody{
+  display: grid;
+  grid-template-columns: auto 10fr;
+  grid: 1rem;
+  grid-template-areas: 
+        "nav orders"
+        "nav orders"
+}
+
+
+.vendorNav{
+  padding: 10px;
+  grid-area: nav;
+  font-size: 2rem;
+  background-color: var(--color-vendor-main);
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.orderList{
+  grid-area: orders;
+  display: flex;
+  flex-direction: column;
+  list-style-type:none;
+}
+
+.historyList h3{
+  padding: 10px;
+  color: white;
+  background-color: #75AEE6;
+}
+
+.historyHeader{
+  padding: 10px;
+  color: white;
+  background-color:#75AEE6;
+}
+
+.outstandingList{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.outstandingList h3{
+  padding: 10px;
+  color: white;
+  background-color: #FFCC00;
+}
+
+.outstandingHeader{
+  padding: 10px;
+  color: white;
+  background-color:#FFCC00;
+}
+
+.fulfilledList{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.fulfilledList h3{
+  padding: 10px;
+  color: white;
+  background-color: #43DA69;
+}
+
+.fulfilledHeader{
+  padding: 10px;
+  color: white;
+  background-color:#43DA69;
+}
+
+.historyList{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.vendorOrder{
+  font-size: 1rem;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
